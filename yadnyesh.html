@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
-<body>
+<body style="filter:blur(100px);">
     <!-- <input type="checkbox" id="check">
     <label for="check">
       <i class="fas fa-bars" id="btn"></i>
@@ -131,6 +131,16 @@
     </div>
 
     <script>
+         window.onload=run();
+        function run(){
+            let key="xyz";
+        let password=prompt("Enter Password");
+        if(password==key){
+           const remove= document.body;
+           remove.removeAttribute('style');
+
+        }
+        }
         window.onscroll = function () { myFunction() };
 
         var header = document.getElementById("myHeader");
